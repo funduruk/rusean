@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Русеан - фитнес-клуб</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo"><img src="logo/logo-black.png" alt="Русеан"></a>
+    <nav>
+      <ul>
+        <li><a href="#schedule">Расписание</a></li>
+        <li><a href="#team">Команда</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#massage">Массаж</a></li>
+        <li><a href="#vacancies">Вакансии</a></li>
+        <li><a href="#gallery">Фотогалерея</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="phone" href="tel:+74959288080">+7 (495) 928-80-80</a>
+      <button class="btn" id="openModalBtn">Заказать звонок</button>
+      
+      <div class="burger" id="burger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+<div class="mobile-nav" id="mobileNav">
+    <button class="mobile-close" id="mobileClose" aria-label="Закрыть меню">✕</button>
+    <ul>
+        <li><a href="#schedule">Расписание</a></li>
+        <li><a href="#team">Команда</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#massage">Массаж</a></li>
+        <li><a href="#vacancies">Вакансии</a></li>
+        <li><a href="#gallery">Фотогалерея</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+    </ul>
+</div>
+</header>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<main>
+<section class="hero" id="top">
+  <div class="hero-stripe"></div>
+  <div class="wrap hero-content">
+    <div class="eyebrow">Фитнес-клуб премиум-класса</div>
+    <h1>Тренируйся <em>лучше.</em><br>Живи <em>ярче.</em></h1>
+    <p>Оборудование Life Fitness и Hammer Strength, СПА с хаммамом и сауной, единоборства и танцевальные программы — всё в одном клубе.</p>
+    <div class="hero-cta">
+      <a href="#services" class="btn">Смотреть услуги</a>
+      <a href="#map" class="btn ghost">Как нас найти</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="wrap">
+      <div class="stat"><b>650 м²</b><span>Тренажёрный зал</span></div>
+      <div class="stat"><b>СПА</b><span>Сауна и хаммам</span></div>
+      <div class="stat"><b>Единоборства</b><span>+ детские секции</span></div>
+      <div class="stat"><b>Mind&amp;Body</b><span>Танцы, аэробика, растяжка</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><div class="kicker">Услуги клуба</div><h2>Всё для тренировки и восстановления</h2></div>
+      <p>От силовых тренажёров премиум-линейки до тайского массажа — подробности по каждому направлению.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="grid-services reveal">
+      <div class="service-card" data-service="spa" data-title="Турецкий хаммам, финская сауна" data-desc="Расслабьтесь после интенсивной тренировки в турецком хаммаме или финской сауне. Влажный пар и сухой жар помогут снять мышечное напряжение, улучшить кровообращение и восстановить силы." data-image="https://ruseansport.ru/upload/iblock/799/khamam.jpg">
+        <div><div class="num">01</div><h3>Турецкий хаммам, финская сауна</h3><p>Восстановление после силовой или длительной кардиотренировки.</p></div>
+        <div class="service-card-foot"><span class="service-tag">СПА</span><span class="arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+      </div>
+      <div class="service-card" data-service="life-fitness" data-title="Тренажёры Life Fitness" data-desc="Оборудование Life Fitness — выбор профессиональных спортсменов и лучших фитнес-клубов мира. Тренажёры обеспечивают плавный ход, анатомически правильную траекторию движений и максимальную эффективность тренировок." data-image="https://ruseansport.ru/upload/iblock/ab1/20150726091518_8.jpg">
+        <div><div class="num">02</div><h3>Тренажёры Life Fitness</h3><p>Оборудование, которому доверяют лучшие клубы и профессиональные спортсмены.</p></div>
+        <div class="service-card-foot"><span class="service-tag">Тренажёры</span><span class="arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+      </div>
+      <div class="service-card" data-service="hammer-strength" data-title="Тренажёры Hammer Strength" data-desc="Hammer Strength — бренд №1 в мире среди силовых тренажёров со свободными весами. Уникальная система независимых рычагов позволяет прорабатывать каждую сторону тела отдельно, добиваясь идеального баланса и силы." data-image="https://ruseansport.ru/upload/iblock/d22/gym8.jpg">
+        <div class="service-card-bg" style="background-image:url('services/hammer.jpg')"></div>
+        <div><div class="num">03</div><h3>Тренажёры Hammer Strength</h3><p>Бренд номер один в мире среди силовых тренажёров со свободными весами.</p></div>
+        <div class="service-card-foot"><span class="service-tag">Силовые</span><span class="arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+      </div>
+      <div class="service-card" data-service="massage" data-title="Тайский массаж" data-desc="Наш мастер из Таиланда выполняет классический тайский массаж, массаж спины и шеи, а также общий расслабляющий массаж. Техника сочетает точечное воздействие, растяжку и мягкую мобилизацию суставов." data-image="https://ruseansport.ru/upload/iblock/ab4/tayskiy-massazh.jpg">
+        <div class="service-card-bg" style="background-image:url('services/massage.jpg')"></div>
+        <div><div class="num">04</div><h3>Тайский массаж</h3><p>Профессионал из Таиланда — для всех любителей тайского массажа.</p></div>
+        <div class="service-card-foot"><span class="service-tag">Массаж</span><span class="arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="zones" id="zones">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><div class="kicker">Направления</div><h2>Выберите свою зону</h2></div>
+      <p>Каждая зона клуба — отдельное пространство со своим оборудованием и расписанием.</p>
+    </div>
+    <div class="zone-tabs reveal">
+      <button class="zone-tab active" data-zone="0">Тренажёрный зал</button>
+      <button class="zone-tab" data-zone="1">СПА комплекс</button>
+      <button class="zone-tab" data-zone="2">Единоборства</button>
+      <button class="zone-tab" data-zone="3">Танцы и Mind&amp;Body</button>
+    </div>
+    <div class="zone-panels reveal">
+      <div class="zone-panel active" data-panel="0">
+        <div>
+          <h3>Тренажёрный зал, 650 м²</h3>
+          <p>Свободные веса, блочные тренажёры и кардиозона на оборудовании Life Fitness и Hammer Strength — для любых целей, от набора массы до похудения.</p>
+          <div class="zone-meta">
+            <div><b>650 м²</b><span>Площадь зала</span></div>
+            <div><b>2</b><span>Бренда оборудования</span></div>
+          </div>
+        </div>
+        <div class="zone-visual">
+          <img src="https://ruseansport.ru/upload/iblock/31a/slider1.jpg" alt="Тренажёрный зал">
+        </div>
+      </div>
+      <div class="zone-panel" data-panel="1">
+        <div>
+          <h3>СПА комплекс</h3>
+          <p>Турецкий хаммам и финская сауна для восстановления после тренировки, а также тайский массаж и солярий.</p>
+          <div class="zone-meta">
+            <div><b>2</b><span>Вида парения</span></div>
+            <div><b>1</b><span>Массажный кабинет</span></div>
+          </div>
+        </div>
+        <div class="zone-visual">
+          <img src="https://ruseansport.ru/upload/iblock/26c/slider2.jpg" alt="СПА комплекс" ">
+        </div>
+      </div>
+      <div class="zone-panel" data-panel="2">
+        <div>
+          <h3>Зал единоборств</h3>
+          <p>Отдельная зона для тренировок по единоборствам, включая детские развивающие секции.</p>
+          <div class="zone-meta">
+            <div><b>Дети</b><span>и взрослые</span></div>
+            <div><b>Групповые</b><span>и индивидуальные</span></div>
+          </div>
+        </div>
+        <div class="zone-visual">
+          <img src="https://ruseansport.ru/upload/iblock/77d/slider3.jpg" alt="Единоборства">
+        </div>
+      </div>
+      <div class="zone-panel" data-panel="3">
+        <div>
+          <h3>Танцы и Mind&amp;Body</h3>
+          <p>Танцевальные классы, аэробные программы и направления Mind&amp;Body для гибкости, баланса и настроения.</p>
+          <div class="zone-meta">
+            <div><b>Разные</b><span>уровни подготовки</span></div>
+            <div><b>Групповой</b><span>формат</span></div>
+          </div>
+        </div>
+        <div class="zone-visual">
+          <img src="https://ruseansport.ru/upload/iblock/370/slider4.jpg" alt="Танцы">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="schedule" id="schedule">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><div class="kicker">Расписание</div><h2>Расписание занятий по залам</h2></div>
+    </div>
+
+    <div class="schedule-week-nav reveal">
+    <button class="week-nav-btn" id="prevWeekBtn" aria-label="Предыдущая неделя">‹</button>
+    <span class="week-range" id="weekRange">Загрузка...</span>
+    <button class="week-nav-btn" id="nextWeekBtn" aria-label="Следующая неделя">›</button>
+</div>
+
+    <div class="schedule-tabs reveal">
+      <button class="schedule-tab active" data-sched="gym">Тренажёрный зал</button>
+      <button class="schedule-tab" data-sched="fight">Единоборства</button>
+      <button class="schedule-tab" data-sched="dance">Танцы и Mind&amp;Body</button>
+    </div>
+    <div class="reveal">
+      <div class="schedule-panel active" data-sched-panel="gym">
+        <div class="schedule-table-wrap">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>Время</th>
+                <th>Пн</th>
+                <th>Вт</th>
+                <th>Ср</th>
+                <th>Чт</th>
+                <th>Пт</th>
+                <th>Сб</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time">09:00</td>
+                <td><span class="lesson-title">Открытый зал</span><span class="lesson-trainer">Администрация клуба</span></td>
+                <td><span class="lesson-title">Открытый зал</span><span class="lesson-trainer">Администрация клуба</span></td>
+                <td><span class="lesson-title">Открытый зал</span><span class="lesson-trainer">Администрация клуба</span></td>
+                <td><span class="lesson-title">Открытый зал</span><span class="lesson-trainer">Администрация клуба</span></td>
+                <td><span class="lesson-title">Открытый зал</span><span class="lesson-trainer">Администрация клуба</span></td>
+                <td><span class="lesson-title">Открытый зал</span><span class="lesson-trainer">Администрация клуба</span></td>
+              </tr>
+              <tr>
+                <td class="time">18:00</td>
+                <td><span class="lesson-title">Силовая</span><span class="lesson-trainer">Миронов Д.</span></td>
+                <td>—</td>
+                <td><span class="lesson-title">Силовая</span><span class="lesson-trainer">Миронов Д.</span></td>
+                <td>—</td>
+                <td><span class="lesson-title">Силовая</span><span class="lesson-trainer">Миронов Д.</span></td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td class="time">19:00</td>
+                <td>—</td>
+                <td><span class="lesson-title">Функциональный тренинг</span><span class="lesson-trainer">Панин М.</span></td>
+                <td>—</td>
+                <td><span class="lesson-title">Функциональный тренинг</span><span class="lesson-trainer">Панин М.</span></td>
+                <td>—</td>
+                <td><span class="lesson-title">Открытый зал</span><span class="lesson-trainer">Администрация клуба</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="schedule-panel" data-sched-panel="fight">
+        <div class="schedule-table-wrap">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>Время</th>
+                <th>Пн</th>
+                <th>Вт</th>
+                <th>Ср</th>
+                <th>Чт</th>
+                <th>Пт</th>
+                <th>Сб</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time">18:00</td>
+                <td><span class="lesson-title">Бокс</span><span class="lesson-trainer">Архипов А.</span></td>
+                <td>—</td>
+                <td><span class="lesson-title">Бокс</span><span class="lesson-trainer">Архипов А.</span></td>
+                <td>—</td>
+                <td><span class="lesson-title">Бокс</span><span class="lesson-trainer">Архипов А.</span></td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td class="time">19:30</td>
+                <td>—</td>
+                <td><span class="lesson-title">Боевое самбо</span><span class="lesson-trainer">Баранник М.</span></td>
+                <td>—</td>
+                <td><span class="lesson-title">Боевое самбо</span><span class="lesson-trainer">Баранник М.</span></td>
+                <td>—</td>
+                <td><span class="lesson-title">Детская группа</span><span class="lesson-trainer">Баранник М.</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="schedule-panel" data-sched-panel="dance">
+        <div class="schedule-table-wrap">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>Время</th>
+                <th>Пн</th>
+                <th>Вт</th>
+                <th>Ср</th>
+                <th>Чт</th>
+                <th>Пт</th>
+                <th>Сб</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time">10:00</td>
+                <td><span class="lesson-title">Йога и растяжка</span></td>
+                <td>—</td>
+                <td><span class="lesson-title">Йога и растяжка</span></td>
+                <td>—</td>
+                <td><span class="lesson-title">Йога и растяжка</span></td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td class="time">20:00</td>
+                <td>—</td>
+                <td><span class="lesson-title">Аэробика</span></td>
+                <td>—</td>
+                <td><span class="lesson-title">Аэробика</span></td>
+                <td>—</td>
+                <td><span class="lesson-title">Танцы</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><div class="kicker">Фотогалерея</div><h2>Как выглядит клуб внутри</h2></div>
+    </div>
+    <div class="gallery-grid">
+      <a href="javascript:void(0)" class="gallery-item" data-gallery="gym">
+        <div class="ph"><span>Тренажёрный зал</span></div>
+        <span class="label">Тренажёрный зал</span>
+      </a>
+      <a href="javascript:void(0)" class="gallery-item" data-gallery="dance">
+        <div class="ph"><span>Танцевальный зал</span></div>
+        <span class="label">Танцевальный зал</span>
+      </a>
+      <a href="javascript:void(0)" class="gallery-item" data-gallery="fight">
+        <div class="ph"><span>Зал единоборств</span></div>
+        <span class="label">Зал единоборств</span>
+      </a>
+      <a href="javascript:void(0)" class="gallery-item" data-gallery="reception">
+        <div class="ph"><span>Ресепшн</span></div>
+        <span class="label">Ресепшн</span>
+      </a>
+      <a href="javascript:void(0)" class="gallery-item" data-gallery="spa">
+        <div class="ph"><span>SPA</span></div>
+        <span class="label">SPA</span>
+      </a>
+      <a href="javascript:void(0)" class="gallery-item" data-gallery="massage">
+        <div class="ph"><span>Массажный кабинет</span></div>
+        <span class="label">Массажный кабинет</span>
+      </a>
+      <a href="javascript:void(0)" class="gallery-item" data-gallery="hamam">
+        <div class="ph"><span>Турецкая баня</span></div>
+        <span class="label">Турецкая баня</span>
+      </a>
+      <a href="javascript:void(0)" class="gallery-item" data-gallery="sauna">
+        <div class="ph"><span>Финская сауна</span></div>
+        <span class="label">Финская сауна</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="team" id="team">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><div class="kicker">Команда</div><h2>Тренеры и специалисты клуба</h2></div>
+      <p>Профессионалы, которые помогут выбрать программу и не свернуть с пути.</p>
+    </div>
+    <div class="team-filters reveal">
+      <button class="team-filter active" data-filter="all">Все</button>
+      <button class="team-filter" data-filter="gym">Тренажёрный зал</button>
+      <button class="team-filter" data-filter="fight">Единоборства</button>
+      <button class="team-filter" data-filter="dance">Танцы и Mind&amp;Body</button>
+      <button class="team-filter" data-filter="spa">СПА и массаж</button>
+      <button class="team-filter" data-filter="admins">Администрация</button>
+      <button class="team-filter" data-filter="rescuers">Дежурные спасатели</button>
+    </div>
+    <div class="team-count reveal" id="teamCount"></div>
+    <div class="team-grid reveal" id="teamGrid">
+<!-- АДМИНИСТРАЦИЯ -->
+<div class="team-card" data-cat="admins" data-desc="2010г. Высшее образование: МосУ МВД РФ. &quot;Социальная психология. Педагог психолог&quot;<br><br>2019г. Диплом о повышении квалификации FPA (Ассоциация Профессионалов Фитнеса)&nbsp;&nbsp;&quot;Управляющий фитнес-клубом&quot;.<br><br>2024г. Сертификат о повышении квалификации Международный Институт Тренеров &quot;Профессионал&quot; - &quot; Бизнес-тренер. Коуч&quot;.<br><br>Опыт работы в сфере фитнеса с 2011г.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/852/zn7ll5b2o59rn3hg1binj7esxadakq1q/WhatsApp-Image-2025_06_23-at-13.58.24.jpeg" alt="Разумов Игнат"><span class="team-tag">Администрация</span></div>
+  <h3>Разумов Игнат</h3>
+  <span>Управляющий</span>
+</div>
+
+<div class="team-card" data-cat="admins" data-desc="">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/195/pwa570f3fmerxuge3ft208i3y36f0l1v/photo_5364123164834731012_w.jpg" alt="Самарина Софья"><span class="team-tag">Администрация</span></div>
+  <h3>Самарина Софья</h3>
+  <span>Менеджер отдела продаж</span>
+</div>
+
+<div class="team-card" data-cat="admins" data-desc="Всем привет. Я Елена, менеджер отдела продаж. За плечами немало опыта работы с людьми. С нашим клубом знакома с самого его основания! Мы с мужем и детьми&nbsp;&nbsp;являемся постоянными клиентами! А теперь я еще&nbsp;&nbsp;и вхожу в состав&nbsp;&nbsp;клубной семьи! Мне нравится работать в фитнес индустрии, потому что здесь я могу сочетать свои знания в области экономики с интересом к здоровому образу жизни. Я люблю помогать людям находить мотивацию для занятий спортом и достижения своих целей. <br>Считаю, что сочетание моего образования и опыта работы, а также страсти к фитнесу,&nbsp;&nbsp;дает мне возможность достичь успеха в этой области. Я ваш надежный проводник в мир здоровья и красоты, наши дорогие клиенты!">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/941/02ou09nuazi9q7qbkbs2jo1bx6pby03b/WhatsApp-Image-2025_05_01-at-17.14.10.jpeg" alt="Керносова Елена"><span class="team-tag">Администрация</span></div>
+  <h3>Керносова Елена</h3>
+  <span>Менеджер отдела продаж</span>
+</div>
+
+<div class="team-card" data-cat="admins" data-desc="Привет! Меня зовут Любовь, я менеджер по продажам в фитнес-клубе «Русеан», который стал для меня вторым домом. Мой путь в этот клуб начался с самого открытия, когда я впервые пришла сюда заниматься вместе со своей семьёй. Это было место, где я нашла свои интересы и увлечения, участвовала во всех мероприятиях и праздниках, любила заниматься на групповых программах и посещать тренажёрный зал.<br>Прежде чем стать частью команды клуба, я работала в банке и на протяжении нескольких лет успешно развивалась в этой сфере. Но моя страсть к спорту и желание быть ближе к людям, которые стремятся к лучшей версии себя, побудили меня совершить смену деятельности. Я узнала о вакансии в фитнес-клубе и решила, что это именно то, что мне нужно.<br>Теперь - я часть команды фитнес клуба «Русеан». Я не только помогаю клиентам выбрать подходящий абонемент, но и вдохновляю их своим примером и искренней уверенностью в важности физической активности. Мои коллеги и клиенты ценят меня за профессионализм, дружелюбие и мотивационные способности!">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/234/qmtr3mylbt8taoebt3pvtdrriti6o5vc/AirBrush_20231128125439.jpg" alt="Серова Любовь"><span class="team-tag">Администрация</span></div>
+  <h3>Серова Любовь</h3>
+  <span>Менеджер отдела продаж</span>
+</div>
+
+<div class="team-card" data-cat="admins" data-desc="">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/d5e/AirBrush_20221219120630.jpg" alt="Балабанян Инесса"><span class="team-tag">Администрация</span></div>
+  <h3>Балабанян Инесса</h3>
+  <span>Менеджер отдела продаж</span>
+</div>
+
+<div class="team-card" data-cat="admins" data-desc="">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/cbc/AirBrush_20211008110555_01.jpeg" alt="Дьякова Елизавета"><span class="team-tag">Администрация</span></div>
+  <h3>Дьякова Елизавета</h3>
+  <span>Старший администратор ресепшн</span>
+</div>
+
+<div class="team-card" data-cat="admins" data-desc="">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/557/pfzvn1svq90f2qochljbbn23fh5pk0ob/photo_5364123164834731011_w.jpg" alt="Аникиенко Ксения"><span class="team-tag">Администрация</span></div>
+  <h3>Аникиенко Ксения</h3>
+  <span>Администратор ресепшн</span>
+</div>
+
+<div class="team-card" data-cat="admins" data-desc="">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/321/2fs0l5nd069homm94q8qwaht2a1ikyor/photo_5364123164834731013_w.jpg" alt="Заварина Ольга"><span class="team-tag">Администрация</span></div>
+  <h3>Заварина Ольга</h3>
+  <span>Администратор ресепшн</span>
+</div>
+
+<div class="team-card" data-cat="admins" data-desc="">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/cab/sbc0kfodzq2uzknef5ys6rjomw8fc7o4/5433923276817239897-_1_.jpg" alt="Игнатова Ксения"><span class="team-tag">Администрация</span></div>
+  <h3>Игнатова Ксения</h3>
+  <span>Администратор ресепшн</span>
+</div>
+
+<div class="team-card" data-cat="admins" data-desc="">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/93a/gka4d3brj4dkqu9vgs7fltu7ug44rknd/WhatsApp-Image-2024_11_01-at-19.31.09.jpeg" alt="Гилаш Даниела"><span class="team-tag">Администрация</span></div>
+  <h3>Гилаш Даниела</h3>
+  <span>Администратор ресепшн</span>
+</div>
+
+<!-- ТРЕНАЖЁРНЫЙ ЗАЛ -->
+<div class="team-card" data-cat="gym" data-desc="Инструктор групповых программ.<br><br>Высшее образование: Армавирский&nbsp;&nbsp;государственный педагогический университет (АГПУ) по направлению &quot;Физическая культура&quot;. <br><br>Сертификат «FIT standard», курс по специализации: Персональный тренер тренажёрного зала.<br>Сертификаты «ФФАР» (Федерация фитнес-аэробики России) в сфере фитнеса.<br>Участник фитнес-конвенций и мастер классов.<br>Дипломированный специалист по Диагностике опорно-двигательного аппарата взрослых и детей «Диагностика осанки, постановки ног и уплощения стоп».<br>Специалист в области: нутрициологии (консультации в питании), коррекции фигуры, набора мышечной массы, жиросжиганию, TRX, функционального тренинга.<br>Сертифицированный тренер по таким направлениям как: классическая аэробика, силовые направления, степ-аэробика, стретчинг, сайкл, трекинг, детский фитнес, табата.<br><br>Опыт тренерской работы: более 7 лет.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/db1/Screenshot_20211205_222027.jpg" alt="Тер-Акопова Марина"><span class="team-tag">Тренажёрный зал</span></div>
+  <h3>Тер-Акопова Марина</h3>
+  <span>Персональный тренер</span>
+</div>
+
+<div class="team-card" data-cat="gym" data-desc="Персональный тренер. <br> Образование:<br> Государственное образовательное учреждение высшего профессионального образования г. Саранск &quot;Мордовский государственный педагогический институт имени М.Е.Евсевьева&quot;. &quot;Диплом педагога по физической культуре и учитель безопасности жизнедеятельности. Судья региональной категории СПР, РЖД. Диплом нутрициолога АНО ДПО &quot;УрИПКиП&quot;. <br> Спортивные достижения и опыт работы:&nbsp;<br> Мастер спорта России по пауэрлифтингу ФПР с 2002 года. Мастер спорта по жимовому двоеборью. Мастер спорта по силовому двоеборью. Мастер спорта по становому двоеборью. Чемпион и призер чемпионата мира IHL, СПР. Чемпион и призер чемпионата Европы IPL, СПР. Чемпион восточной Европы СПР, РЖД Опыт работы более 10 лет.<br> Специализация:<br>Мышечная гипертрофия, коррекция веса, функциональный тренинг, силовой тренинг. Мужчины, женщины, работа с детьми.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/80e/vintenkov.jpg" alt="Винтенков Александр"><span class="team-tag">Тренажёрный зал</span></div>
+  <h3>Винтенков Александр</h3>
+  <span>Координатор тренажерного зала</span>
+</div>
+
+<div class="team-card" data-cat="gym" data-desc="Петряев Яков.<br>Образование:<br>Диплом бакалавра &quot;Московская государственная академия физической культуры&quot; <br>Сертификат &quot;Персональный тренер по бодибилдингу и фитнесу&quot; Ассоциации профессионалов фитнеса FPA.<br>Специализация:<br>Мышечная гипертрофия, коррекция веса, работа с проблемами опорно-двигательного аппарата, функциональный тренинг. Мужчины, женщины, работа с детьми.<br>Опыт работы более 10 лет.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/37b/yasha.jpg" alt="Петряев Яков"><span class="team-tag">Тренажёрный зал</span></div>
+  <h3>Петряев Яков</h3>
+  <span>Персональный тренер тренажерного зала</span>
+</div>
+
+<div class="team-card" data-cat="gym" data-desc="Персональный тренер тренажерного зала, специалист по коррекции фигуры, силовому тренингу.<br>Образование — Высшее.<br>Опыт работы в фитнесе более 6-ти лет.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/96e/agafonov.jpg" alt="Агафонов Александр"><span class="team-tag">Тренажёрный зал</span></div>
+  <h3>Агафонов Александр</h3>
+  <span>Менеджер тренажерного зала</span>
+</div>
+
+<div class="team-card" data-cat="gym" data-desc="Образование: Сертификат &quot;Инструктор тренажерного зала&quot; Ассоциации профессионалов фитнеса FPA.<br>Специализация: Мышечная гипертрофия, коррекция веса, функциональный тренинг. <br>Опыт работы: более 2 лет.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/8ec/AirBrush_20221206175355.jpg" alt="Миронов Дмитрий"><span class="team-tag">Тренажёрный зал</span></div>
+  <h3>Миронов Дмитрий</h3>
+  <span>Персональный тренер тренажерного зала</span>
+</div>
+
+<div class="team-card" data-cat="gym" data-desc="Специализация: мышечная гипертрофия; работа с проблемами опорно-двигательного аппарата, сердечно-сосудистой и дыхательной систем; коррекция веса; функциональный тренинг; стретчинг; улучшение физических качеств, необходимых для подготовки к зимним и летним видам спорта.<br><br>Диплом World Class University.<br><br>&quot;Персональный тренр по кардио тренировкам&quot; Life Fitness Academy. Диплом нутрициолога АНО ДПО &quot;УрИПКиП&quot;.<br><br>Сертифицированный специалист Life Fitness Academy<br><br>Сертификаты FISAF персональный тренер, подвесные конструкции.<br><br>Мастер спорта по пауэрлифтингу.<br><br>Финалистка российских и европейских чемпионатов по бодибилдингу 2001,2002, 2007 и 2008 гг.<br><br>Рекордсменка России, Европы и Мира по жиму лежа категории мастер 50-59 2019 года Федерация WRP.<br><br>Стаж работы в фитнесе 30 лет, персональным тренером - 30 лет">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/4f4/AirBrush_20211008112654_01.jpeg" alt="Смородина Лариса"><span class="team-tag">Тренажёрный зал</span></div>
+  <h3>Смородина Лариса</h3>
+  <span>Персональный тренер тренажерного зала</span>
+</div>
+
+<div class="team-card" data-cat="gym" data-desc="Обучение: Профессиональная школа бодибилдинга и фитнеса г. Москва.&quot; Сертификат персонального тренера по фитнесу и бодибилдингу.<br>Спортивные достижения: Призер соревнований по пауэрлифтингу. Призер соревнований по смешенному боевому единоборству ММА. <br>Опыт работы более 3 лет.<br>Специализация: Мышечная гипертрофия, коррекция веса, функциональный тренинг, силовой тренинг. Мужчины, женщины.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/015/62faj2hh98inc7su7401x4hjdwkznwtu/WhatsApp-Image-2024_11_01-at-19.31.11.jpeg" alt="Закирко Сергей"><span class="team-tag">Тренажёрный зал</span></div>
+  <h3>Закирко Сергей</h3>
+  <span>Персональный тренер тренажерного зала</span>
+</div>
+
+<div class="team-card" data-cat="gym" data-desc="Образование: Московская Государственная Академия Физической культуры <br>Специализация:<br>–Специалист по Адаптивной физкультуре<br>–Программа по выправлению и укреплению осанки при различных заболеваниях позвоночника<br>–Реабилитация после травм<br>–Специалист в области снижения веса и набора мышечной массы<br>Опыт работы: 1 год<br>">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/823/vy87tuy30eqpnl0adzkos32r6f6xvo34/AirBrush_20231012140242.jpg" alt="Матвеев Иван"><span class="team-tag">Тренажёрный зал</span></div>
+  <h3>Матвеев Иван</h3>
+  <span>Персональный тренер тренажерного зала</span>
+</div>
+
+<div class="team-card" data-cat="gym" data-desc="Образование: <br>Сертификат &quot;Инструктор тренажерного зала&quot; Ассоциации профессионалов фитнеса FPA. Сертификат &quot;Фитнес - нутрициолог&quot; Ассоциации профессионалов фитнеса FPA. Диплом бакалавра по физической культуре Федерального государственного бюджетного образовательного учреждения высшего образования &quot;РГСУ г. Москва&quot;. Сертификат участника семинара &quot;Бунт гормонов. Эндокринология и пещевое поведение клиентов в фитнес клубе.&quot; Ассоциации профессионалов фитнеса FPA. Сертификат участника семинара &quot;Круговая тренировка&quot; Ассоциации профессионалов фитнеса FPA. Сертификат участника семинара &quot;Визуальная оценка осанки&quot; Ассоциации профессионалов фитнеса FPA.<br><br>Опыт работы более 5 лет.<br>Специализация: <br>Мышечная гипертрофия, коррекция веса, работа с проблемами опорно-двигательного аппарата, функциональный тренинг. Мужчины, женщины, работа с детьми.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/e4c/AirBrush_20221208193801.jpg" alt="Безруков Даниил"><span class="team-tag">Тренажёрный зал</span></div>
+  <h3>Безруков Даниил</h3>
+  <span>Персональный тренер тренажерного зала</span>
+</div>
+
+<div class="team-card" data-cat="gym" data-desc="Специалист по коррекции веса и фигуры, увеличение мышечной массы, укрепление опорно-двигательного аппарата, увеличение функциональности организма, повышение тонуса организма, исправление осанки,&nbsp;&nbsp;оздоровление проблемных зон поясничного отдела и коленных суставов, комплексное оздоровление организма за счёт улучшения адаптивных способностей<br>Опыт работы 10 лет">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/19f/nndxvf0emmzu4zytkah8nt9q67fkn2u9/WhatsApp-Image-2024_11_01-at-19.31.10.jpeg" alt="Панин Максим"><span class="team-tag">Тренажёрный зал</span></div>
+  <h3>Панин Максим</h3>
+  <span>Персональный тренер тренажерного зала</span>
+</div>
+
+<div class="team-card" data-cat="gym" data-desc="Сертифицированный инструктор тренажерного зала Ассоциации профессионалов фитнеса (FPA).<br>Специализация: коррекция фигуры, снижение веса, набор мышечной массы, работа с проблемами опорно-двигательного аппарата, функциональный тренинг, стретчинг.<br><br>Сертификаты Ассоциации профессионалов фитнеса (FPA):<br>«Инструктор тренажерного зала»<br>«Тренер по стретчингу»<br>«Тренировки при диастазе»<br><br>Участник семинаров Ассоциации профессионалов фитнеса (FPA):<br>«функциональный тренинг»<br>«Особенности фитнес тренировки при остеохондрозе позвоночника»<br>«Восстановление двигательной активности клиента фитнес клуба с нарушениями функций и травмами коленного сустава»<br>«Особенности фитнес тренировки возрастных клиентов»<br>«Подвесной тренинг»<br><br>Стаж работы более 4 лет.<br><br>Специализация: коррекция фигуры, снижение веса, набор мышечной массы, работа с проблемами опорно-двигательного аппарата, функциональный тренинг, стретчинг. Мужчины, женщины.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/d7d/1000013679_01.jpeg" alt="Огонёк Вера"><span class="team-tag">Тренажёрный зал</span></div>
+  <h3>Огонёк Вера</h3>
+  <span>Персональный тренер тренажерного зала</span>
+</div>
+
+<!-- ЕДИНОБОРСТВА -->
+<div class="team-card" data-cat="fight" data-desc="Персональный тренер по боевому самбо.<br><br>Образование: Московская Государственная Академия Физической Культуры;<br>Сертифицированный инструктор тренажёрного зала Ассоциации профессионалов Фитнеса (FPA).<br><br> КМС по спортивному и боевому самбо<br>Победитель всероссийских турниров по боевому самбо,<br>призер Первенства Московской области.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/c90/AirBrush_20230606111551.jpg" alt="Баранник Михаил"><span class="team-tag">Единоборства</span></div>
+  <h3>Баранник Михаил</h3>
+  <span>Инструктор групповых программ по боевым искусствам</span>
+</div>
+
+<div class="team-card" data-cat="fight" data-desc="Персональный тренер по боксу.<br><br>Персональный тренер тренажерного зала.<br><br>Инструктор групповых программ.<br><br>Образование — Высшее.<br>Сертификат по силовому тренингу в группе.<br>КМС по боксу, Победитель и Призер соревнований Москвы и Московской области.<br>МС по жиму лежа.<br>Занимается подготовкой спортсменов к соревнованиям.<br>Опыт работы более 10-и лет.<br>Девиз: Быть первым — быть лучшим.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/bc8/qlyrfgv42cp9pzgn9l3sjh3x19t2n21j/Arkhipov-Andrey.jpg" alt="Архипов Андрей"><span class="team-tag">Единоборства</span></div>
+  <h3>Архипов Андрей</h3>
+  <span>Менеджер групповых программ по боевым искусствам</span>
+</div>
+
+<!-- ТАНЦЫ и MIND&BODY -->
+<div class="team-card" data-cat="dance" data-desc="Среднее общее образование, на данный момент учусь в Московской Государственной Академии Физической Культуры на 2 курсе, направление- Оздоровительные виды аэробики и гимнастики <br>В этом же вузе прошла курсы повышения квалификации « Базовый курс инструктора групповых программ. Методика составления и разучивания комбинаций в аэробике.»<br>Мастер спорта по спортивной акробатике<br>Комбинированный урок: Классическая аэробика + проработка мышц пресса и спины. Целевая аудитория 20-40 лет">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/323/izanjx0rci3jp73b8nu3nlkp3ri8vnlm/WhatsApp-Image-2025_05_01-at-17.14.09-_1_.jpeg" alt="Бойкова Виктория"><span class="team-tag">Танцы и Mind&Body</span></div>
+  <h3>Бойкова Виктория</h3>
+  <span>Инструктор групповых программ</span>
+</div>
+
+<div class="team-card" data-cat="dance" data-desc="Я, Гусейнова Камилла, — преподаватель хатха-йоги.<br><br>Моя личная практика началась в 2021 году.<br>В 2023 году я углубилась в профессиональное обучение в Московской школе йоги.<br>В 2025 прошла углублённый курс повышения квалификации Level Up в Московской школе йоги.<br><br>Сейчас продолжаю развиваться и прохожу курс личной практики в школе «Чатуранга» под руководством Глеба Мозаева и Дмитрия Дёмина.<br><br>Что для меня йога?<br><br>Это гораздо больше, чем про физическое тело.<br><br>Йога — это про внутреннее.<br>Про ощущение себя.<br>Про честное чувствование себя в своём теле.<br>Про умение слышать свои желания и замечать свои настоящие потребности.<br>Про способность замечать эмоции и чувства, которые поднимаются и проживаются в процессе практики.<br><br>Это про возвращение внимания внутрь — через движение, через дыхание, через присутствие в моменте.<br><br>Йога — это то, что я безумно люблю.<br>Это то, что наполняет меня энергией и даёт возможность жить каждый день более полно, проживая любые ситуации осознанно и с принятием.<br><br>Именно потому, что я люблю это всем сердцем, я делюсь этим с другими.<br><br>Я практикую не ради результата и не ради формы.<br>Через практику я возвращаю внимание к себе. Я возвращаю себе себя.<br><br>И этим я хочу делиться с людьми —<br>чтобы помочь каждому снова почувствовать себя, услышать себя<br>и мягко вернуться домой — внутрь.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/660/8ielpkowi2339ka9ix2n5kur5cf3ryse/photo_5364123164834731015_w.jpg" alt="Гусейнова Камилла"><span class="team-tag">Танцы и Mind&Body</span></div>
+  <h3>Гусейнова Камилла</h3>
+  <span>Инструктор групповых программ</span>
+</div>
+
+<div class="team-card" data-cat="dance" data-desc="Персональный тренер, инструктор групповых программ <br>Опыт работы с 2011 года<br><br>Школа фитнеса VP fitness consulting Диплом Тренера тренажерного зала <br>Школа «Лига фитнеса» Диплом «Универсальный тренер» (тренер тренажерного зала, тренер групповых программ, нутрициология)<br>Сертификаты Тренера групповых программ: шейпинг, функциональные тренировки, аэробика, аэроденс, степ-аэробика, пилатес, стретчинг, силовая, латина, TRX, гимнастические кольца, DSL, Миофасциальный релиз<br><br>Московский институт психоанализа - Баланс психологии, питания и тела<br><br>Международный институт интегративной нутрициологии «Фитнес-нутрициолог»<br>Arcanum «Психосоматика. Проработка триггерных точек».<br>Академия доп.проф.образования и развития современных компетенций «Педагог доп.образования детей и взрослых»<br>Медицинский центр реабилитации «Лечебная физкультура», «ЛФК при заболеваниях опорно-двигательного аппарата у детей».<br>VP fitness consulting «Реабилитология при заболеваниях позвоночника»<br><br>Physical therapy - Работа с межпозвоночными грыжами в рамках фитнес-центра<br>FitCommunity - Использование стретчинга для коррекции осанки<br><br>Работа с проблемами ОДА, грыжи, протрузии, опущение органов, загиб желчного, реабилитация после травм(переломов) и операций, реабилитация после эндопротезирования, дыхательные практики, проработка триггерных точек, остеохондроз, артроз и тд.<br><br>Нахожусь в постоянной практике, изучении различной информации, посещаю мастер-классы, конвенции.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/28d/is1n30iapjg81h1ghbzp9781x2tptgki/WhatsApp-Image-2025_11_01-at-15.52.04.jpeg" alt="Лежнева Лилия"><span class="team-tag">Танцы и Mind&Body</span></div>
+  <h3>Лежнева Лилия</h3>
+  <span>Инструктор групповых программ</span>
+</div>
+
+<div class="team-card" data-cat="dance" data-desc="Инструктор групповых программ.<br>Персональный тренер. <br>Студент школы &quot;Move4s&quot;<br>Сертифицированный тренер по работе со сколиозом и сколиотической осанкой.<br>Коррекция осанки, коррекция плоскостопия, коррекция Х- и О-образных ног.<br>Работает с отеками – лимфодренажная тренировка.<br>Составление плана питания на снижение жировой прослойки.<br>Тренировка МФР (миофасциальный релиз)<br>Постизометрическая релаксация - стрейчинг<br>3D-тренировки. Функциональный тренинг. TRX тренировки<br>">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/3cb/sveta.jpg" alt="Кондратьева Светлана"><span class="team-tag">Танцы и Mind&Body</span></div>
+  <h3>Кондратьева Светлана</h3>
+  <span>Инструктор-универсал Групповых программ</span>
+</div>
+
+<div class="team-card" data-cat="dance" data-desc="Инструктор ZUMBA fitness и Stretching - с 2019г. Вся хореография и музыка лицензированная (подобранна для каждого класса).Ежегодное участие в международных Zumba конвенциях.Постояное повышение квалификации и обучение.<br>Образование -высшее.<br>Стаж работы 12 лет.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/6e5/AirBrush_20221223112501.jpg" alt="Величко София"><span class="team-tag">Танцы и Mind&Body</span></div>
+  <h3>Величко София</h3>
+  <span>Инструктор групповых программ</span>
+</div>
+
+<div class="team-card" data-cat="dance" data-desc="">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/bbd/yk7zk526nlhf284ksojm8vodpqhrz78y/IMG_20240214_174309_438.jpg" alt="Грек Алла"><span class="team-tag">Танцы и Mind&Body</span></div>
+  <h3>Грек Алла</h3>
+  <span>Инструктор групповых программ</span>
+</div>
+
+<div class="team-card" data-cat="dance" data-desc="Образование высшее: Санкт-Петербургский институт внешнеэкономических отношений и права. <br>Стаж работы 12 лет.<br>Призёр конкурса арабского танца в Турции г. Кемер 2009г. <br>Руководитель школы восточного танца для детей и взрослых.<br>Инструктор по Belly Dance, Stretching, Калланетике.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/913/IMG_20190918_WA0000.jpg" alt="Шейко Екатерина"><span class="team-tag">Танцы и Mind&Body</span></div>
+  <h3>Шейко Екатерина</h3>
+  <span>Инструктор танцевальных направлений</span>
+</div>
+
+<!-- СПА и МАССАЖ -->
+<div class="team-card" data-cat="spa" data-desc="Инструктор аква-программ для детей и взрослых.<br><br>Образование — Высшее&nbsp;&nbsp;(Московская Государственная Академия Физической Культуры и Спорта).<br>Имеет 2 разряд по борьбе самбо.<br>Сертификаты по групповым аква программам и детскому фитнесу.<br>Участница различных ежегодных конвенций по аква-аэробике и детскому фитнесу.<br>Опыт работы более 8 лет.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/19e/kosatikova-i.jpg" alt="Косатикова Ирина"><span class="team-tag">СПА и массаж</span></div>
+  <h3>Косатикова Ирина</h3>
+  <span>Персональный тренер по плаванию</span>
+</div>
+
+<div class="team-card" data-cat="spa" data-desc="1988-1992гг. - Московский областной государственный институт физической культуры. Специальность - физическая культура и спорт. Квалификация - Преподаватель физической культуры. Тренер по общей физической подготовке.<br>1996г - Диплом кандидата педагогических наук, Российская государственная академия физической культуры.<br>Сертификаты выданы в 2023г. МГАФК: &quot;Современные технологии спортивной подготовки в плавании&quot;; &quot;Адаптивная физическая культура: физкультурно-оздоровительные мероприятия, спорт&quot;; Организация работы фитнес-центра и современные фитнес-технологии&quot;<br>Первый взрослый разряд по спортивному плаванию, Судья 2-й категории по спортивному плаванию, судья 3-й категории по спортивному многоборью, судья 1-й категории по футболу.<br>Опыт работы в спорте: 2014-2015гг.Фитнес-клуб WeGym, тренер по плаванию, 2015г.-наст.вр. - Спортивная школа, инструктор по спорту<br>Тренер по плаванию, инструктор групповых программ по обучению и совершенствованию навыков плавания у детей и взрослых<br>Работаю с любыми возрастами, начиная с 7 лет">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/4d1/zqtgen3ky3wb5ejres8xpk9usnlx1r65/WhatsApp-Image-2025_05_01-at-17.14.09.jpeg" alt="Самусенкова Виктория"><span class="team-tag">СПА и массаж</span></div>
+  <h3>Самусенкова Виктория</h3>
+  <span>Инструктор по плаванию</span>
+</div>
+
+<div class="team-card" data-cat="spa" data-desc="">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/c23/7r82rpkiivclvhvmjrqotrmi2fwed4tc/WhatsApp-Image-2025_05_01-at-17.15.13.jpeg" alt="Массажист Атун"><span class="team-tag">СПА и массаж</span></div>
+  <h3>Массажист Атун</h3>
+  <span>Тайский массаж</span>
+</div>
+
+<div class="team-card" data-cat="spa" data-desc="">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/f10/w16hmt6s46pns39xhwgc9kzvdo3p3hv8/WhatsApp-Image-2025_05_01-at-17.15.12.jpeg" alt="Массажист Майя"><span class="team-tag">СПА и массаж</span></div>
+  <h3>Массажист Майя</h3>
+  <span>Тайский массаж</span>
+</div>
+
+<div class="team-card" data-cat="spa" data-desc="Сертифицированный специалист классического массажа.<br>Специализация:<br>▪︎ Массаж спины<br>▪︎ Шейно-воротниковая зона<br>▪︎ Классический массаж<br>▪︎ Спортивный массаж<br>▪︎ Испанский хиромассаж тела<br>▪︎ Даосский массаж живота<br>▪︎ Холистический палсинг<br>▪︎ Лимфодренажный массаж<br>▪︎ Фут массаж<br>▪︎ Мягкие мануальные техники в массаже<br>Опыт работы: более 3-х лет.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/784/o3vg3hdlskksofvfrw35r2eqsn4z959j/AirBrush_20231012144249-_1_.jpg" alt="Фомичев Илья"><span class="team-tag">СПА и массаж</span></div>
+  <h3>Фомичев Илья</h3>
+  <span>Массажист</span>
+</div>
+
+<div class="team-card" data-cat="spa" data-desc="Сертифицированный массажист в следующих областях:<br>- классический массаж; <br>- лимфодренажный массаж; <br>- баночный массаж; <br>- соединительно-тканный массаж; <br>- постизометрическая релаксация;<br>- традиционый Восточный точечный массаж по телу.<br>Опыт работы: более 3-х лет.">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/1cc/6a97kmvt5fqtdy84gishi74r8ddgm2ze/AirBrush_20231012154142-_1_.jpg" alt="Агафонов Александр"><span class="team-tag">СПА и массаж</span></div>
+  <h3>Агафонов Александр</h3>
+  <span>Массажист</span>
+</div>
+
+<!-- ДЕЖУРНЫЕ СПАСАТЕЛИ -->
+<div class="team-card" data-cat="rescuers" data-desc="">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/097/l2vy6nyrtiny6mjv4mq754l9zthol5m0/WhatsApp-Image-2025_05_01-at-17.14.10-_2_.jpeg" alt="Чуйков Матвей"><span class="team-tag">Дежурные спасатели</span></div>
+  <h3>Чуйков Матвей</h3>
+  <span>Дежурный спасатель</span>
+</div>
+
+<div class="team-card" data-cat="rescuers" data-desc="">
+  <div class="team-photo"><img src="https://ruseansport.ru/upload/iblock/c27/8hd7bsmv5dts7xspmxgts9zihvj7kdg9/WhatsApp-Image-2025_05_01-at-17.14.10-_1_.jpeg" alt="Дятлов Виктор"><span class="team-tag">Дежурные спасатели</span></div>
+  <h3>Дятлов Виктор</h3>
+  <span>Дежурный спасатель</span>
+</div>
+    </div>
+  </div>
+</section>
+
+<section class="massage" id="massage">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><div class="kicker">СПА и массаж</div><h2>Запись на массаж</h2></div>
+      <p>Оставьте телефон - администратор свяжется с вами, чтобы подобрать удобное время.</p>
+    </div>
+    <div class="massage-box reveal">
+      <div class="massage-info">
+        <h3>Тайский массаж и СПА-процедуры</h3>
+        <p>Профессиональный мастер из Таиланда. Разнообразные техники массажа и оздоровительные процедуры для полного расслабления и восстановления.</p>
+        <ul>
+          <li>Тайский традиционный массаж</li>
+          <li>Тайский slim-массаж</li>
+          <li>Stone-терапия</li>
+          <li>Массаж шеи и плеч</li>
+          <li>Балийский масляный массаж</li>
+          <li>Массаж лица и головы</li>
+          <li>Оздоровительный массаж</li>
+        </ul>
+      </div>
+      <form class="massage-form" id="massageForm">
+        <label for="mName">Имя</label>
+        <input id="mName" type="text" placeholder="Ваше имя" required>
+        <label for="mPhone">Телефон</label>
+        <input id="mPhone" type="tel" placeholder="+7 (___) ___-__-__" required>
+        <label for="mType">Вид массажа</label>
+        <select id="mType">
+          <option>Тайский традиционный массаж</option>
+          <option>Тайский slim-массаж</option>
+          <option>Stone-терапия</option>
+          <option>Массаж шеи и плеч</option>
+          <option>Балийский масляный массаж</option>
+          <option>Массаж лица и головы</option>
+          <option>Оздоровительный массаж</option>
+          <option>Не знаю, посоветуйте</option>
+        </select>
+        <button type="submit" class="btn">Записаться</button>
+        <div class="massage-success" id="massageSuccess">Заявка принята - мы свяжемся с вами по указанному номеру.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="vacancies">
+  <div class="cta reveal">
+    <h2>Хотите присоединиться к команде «Русеан»?</h2>
+    <a href="#" class="btn">Смотреть вакансии</a>
+  </div>
+</section>
+
+<section class="map-section" id="map">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="kicker">Контакты</div>
+        <h2>Как нас найти</h2>
+      </div>
+      <p>Московская область, городской округ Люберцы, деревня Островцы, Молодёжная улица, 46 • +7 (495) 928-80-80</p>
+    </div>
+    <div class="map-container reveal">
+      <iframe src="https://yandex.ru/map-widget/v1/org/rusean/217546082138/?ll=37.980887%2C55.600986&utm_source=share&z=18.6" width="100%" height="450" style="border:0; border-radius:20px;" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contacts">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">Русе<span>ан</span></div>
+        <p style="max-width:280px;font-size:14px;">Фитнес-клуб с современным оборудованием премиум-линейки Life Fitness и Hammer Strength.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="#schedule">Расписание</a></li>
+          <li><a href="#team">Команда</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#vacancies">Вакансии</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="tel:+74959288080">+7 (495) 928-80-80</a></li>
+          <li><a href="https://vk.com/ruseansport" target="_blank" rel="noopener noreferrer">VK</a></li>
+          <li><a href="https://max.ru/u/f9LHodD0cOLmySYX7XIsrjm2X5gk340t_AjVQkGANw3Dw01KiKqO1RXFg68" target="_blank" rel="noopener noreferrer">Max</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Клуб</h4>
+        <ul>
+          <li><a href="#">Политика конфиденциальности</a></li>
+          <li><a href="#gallery">Фотогалерея</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© «Русеан» - фитнес-клуб</span>
+      <span>Дизайн-концепт 2026</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Модальное окно обратного звонка -->
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="callbackModalTitle">
+  <div class="modal">
+    <div class="modal-close" id="modalClose" aria-label="Закрыть">✕</div>
+    <h3 id="callbackModalTitle">Обратный звонок</h3>
+    <p>Оставьте номер - наш администратор свяжется с вами.</p>
+    <form id="callbackForm">
+      <label for="cbName" class="visually-hidden">Ваше имя</label>
+      <input type="text" id="cbName" placeholder="Ваше имя" required>
+      <label for="cbPhone" class="visually-hidden">Телефон</label>
+      <input type="tel" id="cbPhone" placeholder="+7 (___) ___-__-__" required>
+      <button type="submit" class="btn">Отправить</button>
+      <div id="callbackSuccess" style="display:none; color: #8AD98A; margin-top: 10px; font-weight: 600;">
+        Заявка принята! Мы свяжемся с вами.
+      </div>
+    </form>
+  </div>
+</div>
+<!-- Панель сотрудника -->
+<div class="panel-overlay" id="staffPanelOverlay" role="dialog" aria-modal="true" aria-labelledby="staffPanelName">
+  <div class="staff-panel" id="staffPanel">
+    <div class="staff-panel-photo" id="staffPanelPhotoWrap">
+      <div class="staff-panel-close" id="staffPanelClose" aria-label="Закрыть">✕</div>
+      <img id="staffPanelPhoto" src="" alt="" style="display:none;">
+    </div>
+    <div class="staff-panel-body">
+      <span class="staff-panel-tag" id="staffPanelTag"></span>
+      <h3 id="staffPanelName"></h3>
+      <span class="staff-panel-role" id="staffPanelRole"></span>
+      <p class="staff-panel-desc" id="staffPanelDesc"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно услуги -->
+<div class="modal-overlay" id="serviceModalOverlay" role="dialog" aria-modal="true" aria-labelledby="serviceModalTitle">
+  <div class="modal service-modal">
+    <div class="modal-close" id="serviceModalClose" aria-label="Закрыть">✕</div>
+    <div class="service-modal-image-wrap">
+      <img class="service-modal-image" id="serviceModalImage" src="" alt="">
+    </div>
+    <h3 id="serviceModalTitle"></h3>
+    <p id="serviceModalDesc"></p>
+  </div>
+</div>
+
+<!-- Модальное окно занятия -->
+<div class="modal-overlay" id="lessonModalOverlay" role="dialog" aria-modal="true" aria-labelledby="lessonModalTitle">
+  <div class="modal lesson-modal">
+    <div class="modal-close" id="lessonModalClose" aria-label="Закрыть">✕</div>
+    <div class="lesson-modal-head">
+      <h3 id="lessonModalTitle"></h3>
+      <div class="lesson-modal-title-rule"></div>
+      <div class="lesson-modal-date-row">
+        <span id="lessonModalDate"></span>
+        <span class="lesson-modal-date-separator">•</span>
+        <span id="lessonModalDayTime"></span>
+        <span class="lesson-modal-date-separator">•</span>
+        <span id="lessonModalDuration"></span>
+      </div>
+    </div>
+    <div class="lesson-modal-trainer-row">
+      <div class="lesson-modal-photo-wrap">
+        <img class="lesson-modal-photo" id="lessonModalPhoto" src="" alt="">
+      </div>
+      <div class="lesson-modal-trainer-copy">
+        <div class="lesson-modal-trainer-name" id="lessonModalTrainer"></div>
+        <div class="lesson-modal-trainer-room" id="lessonModalRoom"></div>
+      </div>
+    </div>
+    <div class="lesson-modal-text">
+      <p id="lessonModalDesc"></p>
+    </div>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+
+<div class="gallery-modal" id="galleryModal" role="dialog" aria-modal="true" aria-label="Галерея изображений">
+  <button class="gallery-modal-close" id="galleryModalClose" aria-label="Закрыть">×</button>
+  <button class="gallery-modal-prev" id="galleryModalPrev" aria-label="Предыдущее">‹</button>
+  <div class="gallery-modal-content">
+    <div class="gallery-slider">
+        <img id="galleryModalImage" src="" alt="Фото галереи">
+        <img id="galleryModalImageNext" src="" alt="" style="display:none;">
+    </div>
+    <div class="gallery-modal-counter" id="galleryModalCounter">1 / 1</div>
+</div>
+  <button class="gallery-modal-next" id="galleryModalNext" aria-label="Следующее">›</button>
+</div>
+
+</body>
+</html>
